@@ -3,14 +3,12 @@
 Laravel製の自作CMS
 
 # 初期ユーザー
-
 ユーザー名:UserName
 メールアドレス:User@mailaddress.com
 パスワード：password
 
 
 # テーマはDemoThemeを用意
-
 
 
 # 自作テーマ作成に必要なファイル
