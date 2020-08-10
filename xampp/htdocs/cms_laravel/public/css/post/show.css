@@ -1,0 +1,43 @@
+.show_card .card-header {
+  display: flex;
+  align-items: center;
+}
+.show_card .card-header .operation_list {
+  margin-left: auto;
+}
+.show_card .card-header .card-title {
+  float: none;
+}
+
+.tag_list {
+  padding-left: 1.2em;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .show_card .show_sp_d {
+    display: block !important;
+  }
+
+  .operation_list {
+    text-align: right;
+  }
+
+  .operation_list > li:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .operation_list > li:not(:nth-child(-n+2)) {
+    margin-top: 6px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .show_card .card-header {
+    display: block;
+  }
+
+  .show_card .card-header .operation_list {
+    margin-top: 10px;
+    text-align: left;
+  }
+}

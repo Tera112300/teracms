@@ -1,0 +1,13 @@
+$(function(){
+  //var js_slug_link = $("#slug_wrap .js_slug_link").text();
+  var js_slug_link = $("#slug_wrap .js_slug_link").data('link');
+  $("#slug_wrap .js_slug_input").on("keyup paste cut",function(e){
+    var input_val = $(this).val();
+    //console.log(e.keyCode);
+    $("#slug_wrap .js_slug_link").text(js_slug_link + input_val);
+    if(input_val.slice(0,1) == "/"){
+      $(this).val(input_val.slice(1));
+      $("#slug_wrap .js_slug_link").text(js_slug_link + input_val.slice(1));
+    }
+  });
+});

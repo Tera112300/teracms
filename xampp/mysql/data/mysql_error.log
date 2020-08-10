@@ -1,0 +1,79 @@
+InnoDB: using atomic writes.
+2020-08-10  5:46:34 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-08-10  5:46:34 0 [Note] InnoDB: Uses event mutexes
+2020-08-10  5:46:34 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2020-08-10  5:46:34 0 [Note] InnoDB: Number of pools: 1
+2020-08-10  5:46:34 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2020-08-10  5:46:34 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2020-08-10  5:46:34 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-08-10  5:46:34 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300288
+2020-08-10  5:46:35 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2020-08-10  5:46:35 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2020-08-10  5:46:35 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2020-08-10  5:46:35 0 [Note] InnoDB: Setting file '\Users\terao\Downloads\xampp-portable-windows-x64-7.4.8-0-VC15\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2020-08-10  5:46:35 0 [Note] InnoDB: File '\Users\terao\Downloads\xampp-portable-windows-x64-7.4.8-0-VC15\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2020-08-10  5:46:35 0 [Note] InnoDB: Waiting for purge to start
+2020-08-10  5:46:35 0 [Note] InnoDB: 10.4.13 started; log sequence number 300297; transaction id 171
+2020-08-10  5:46:35 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\terao\Downloads\xampp-portable-windows-x64-7.4.8-0-VC15\xampp\mysql\data\ib_buffer_pool
+2020-08-10  5:46:35 0 [Note] Plugin 'FEEDBACK' is disabled.
+2020-08-10  5:46:35 0 [Note] Server socket created on IP: '::'.
+2020-08-10  5:46:35 0 [Note] InnoDB: Buffer pool(s) load completed at 200810  5:46:35
+InnoDB: using atomic writes.
+2020-08-10 17:53:38 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-08-10 17:53:38 0 [Note] InnoDB: Uses event mutexes
+2020-08-10 17:53:38 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2020-08-10 17:53:38 0 [Note] InnoDB: Number of pools: 1
+2020-08-10 17:53:38 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2020-08-10 17:53:38 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2020-08-10 17:53:38 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-08-10 17:53:38 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300990
+2020-08-10 17:53:39 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2020-08-10 17:53:39 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2020-08-10 17:53:39 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2020-08-10 17:53:39 0 [Note] InnoDB: Setting file '\Users\terao\Downloads\tera_cms\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2020-08-10 17:53:39 0 [Note] InnoDB: File '\Users\terao\Downloads\tera_cms\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2020-08-10 17:53:39 0 [Note] InnoDB: Waiting for purge to start
+2020-08-10 17:53:39 0 [Note] InnoDB: 10.4.13 started; log sequence number 300999; transaction id 197
+2020-08-10 17:53:39 0 [Note] Plugin 'FEEDBACK' is disabled.
+2020-08-10 17:53:39 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\terao\Downloads\tera_cms\xampp\mysql\data\ib_buffer_pool
+2020-08-10 17:53:39 0 [Note] InnoDB: Buffer pool(s) load completed at 200810 17:53:39
+2020-08-10 17:53:39 0 [Note] Server socket created on IP: '::'.
+InnoDB: using atomic writes.
+2020-08-10 19:17:35 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-08-10 19:17:35 0 [Note] InnoDB: Uses event mutexes
+2020-08-10 19:17:35 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2020-08-10 19:17:35 0 [Note] InnoDB: Number of pools: 1
+2020-08-10 19:17:35 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2020-08-10 19:17:35 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2020-08-10 19:17:35 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-08-10 19:17:35 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=430386
+2020-08-10 19:17:35 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2020-08-10 19:17:35 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2020-08-10 19:17:35 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2020-08-10 19:17:35 0 [Note] InnoDB: Setting file '\Users\terao\Downloads\tera_cms\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2020-08-10 19:17:35 0 [Note] InnoDB: File '\Users\terao\Downloads\tera_cms\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2020-08-10 19:17:35 0 [Note] InnoDB: Waiting for purge to start
+2020-08-10 19:17:35 0 [Note] InnoDB: 10.4.13 started; log sequence number 430395; transaction id 462
+2020-08-10 19:17:35 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\terao\Downloads\tera_cms\xampp\mysql\data\ib_buffer_pool
+2020-08-10 19:17:35 0 [Note] Plugin 'FEEDBACK' is disabled.
+2020-08-10 19:17:35 0 [Note] InnoDB: Buffer pool(s) load completed at 200810 19:17:35
+2020-08-10 19:17:36 0 [Note] Server socket created on IP: '::'.
+InnoDB: using atomic writes.
+2020-08-10 19:34:29 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-08-10 19:34:29 0 [Note] InnoDB: Uses event mutexes
+2020-08-10 19:34:29 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2020-08-10 19:34:29 0 [Note] InnoDB: Number of pools: 1
+2020-08-10 19:34:29 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2020-08-10 19:34:29 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2020-08-10 19:34:29 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-08-10 19:34:29 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=443874
+2020-08-10 19:34:29 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2020-08-10 19:34:29 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2020-08-10 19:34:29 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2020-08-10 19:34:29 0 [Note] InnoDB: Setting file '\Users\terao\Downloads\tera_cms\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2020-08-10 19:34:29 0 [Note] InnoDB: File '\Users\terao\Downloads\tera_cms\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2020-08-10 19:34:29 0 [Note] InnoDB: Waiting for purge to start
+2020-08-10 19:34:29 0 [Note] InnoDB: 10.4.13 started; log sequence number 443883; transaction id 537
+2020-08-10 19:34:29 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\terao\Downloads\tera_cms\xampp\mysql\data\ib_buffer_pool
+2020-08-10 19:34:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+2020-08-10 19:34:29 0 [Note] Server socket created on IP: '::'.

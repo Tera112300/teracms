@@ -1,0 +1,51 @@
+#themes .theme_item {
+  border: 1px solid #ccc;
+  background: #fff;
+}
+#themes .theme_item .theme_btn {
+  padding: 8px 13px;
+  letter-spacing: -0.4em;
+}
+#themes .theme_item .theme_btn .in_l {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: normal;
+  width: calc(100% - 110px);
+  margin-right: 10px;
+}
+#themes .theme_item .theme_btn .in_r {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: normal;
+  width: 100px;
+}
+#themes .theme_item .theme_btn .in_r .btn {
+  font-size: 13px;
+  padding: 5px;
+}
+#themes .theme_item .title {
+  font-size: 20px;
+  word-break: break-all;
+  line-height: 1.2;
+}
+#themes .theme_item.active {
+  background: #23282d;
+}
+#themes .theme_item.active .title {
+  color: #fff;
+}
+#themes .theme_item.active .btn {
+  color: #fff;
+  background: #007cba;
+  border-color: #007cba;
+}
+
+@media screen and (max-width: 1500px) {
+  #themes .theme_item .title {
+    font-size: 16px;
+  }
+
+  #themes .theme_item .theme_btn .in_r .btn {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*! Writen  by SCSS */
+@import "mixin";
+
+#datepicker{
+    font-size: 13px;
+	background: #23282d;
+	padding: 10px 7px 3px;
+    .ui-datepicker-inline{
+        width: 100%;
+        padding: 0;
+    }
+	
+    .ui-widget.ui-widget-content{
+        border: none;
+        background: none;
+    }
+    .ui-datepicker .ui-datepicker-header{
+        color: #fff;
+background: none;
+border: none;
+width: 87%;
+margin: 0 auto;
+    }
+    .ui-datepicker th{
+        color: #fff;
+    }
+    .ui-state-default{
+        color: #fff;
+        background: none;
+        border: none;
+		/*color: #fff;
+			background: #c5c5c5;*/
+		color: #fff;
+    background: #374350;
+        text-align: center;
+		transition: opacity 0.6s ease-in-out;
+			#{$pc} &:hover{
+				opacity: 0.6;
+			}
+        /*&.ui-state-active{
+            background: #000;
+            
+        }*/
+    }
+    .ui-datepicker-today{
+		opacity: 1;
+		a,
+		span{
+			color: #fff;
+			background: #000;
+		}
+		
+	}
+    .ui-widget-header .ui-icon{
+        background: none;
+    }
+    .ui-datepicker .ui-datepicker-next{
+        background: none;
+        border: none;
+        cursor: pointer;
+        right: -22px;
+        &::after{
+            content: "\f054" !important;
+            font-weight: bold;
+            color: #fff;
+            font-family: "Font Awesome 5 Free" !important;
+        }
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    .ui-datepicker .ui-datepicker-prev{
+        background: none;
+        border: none;
+        cursor: pointer;
+        &::after{
+            content: "\f053" !important;
+            font-weight: bold;
+            color: #fff;
+            font-family: "Font Awesome 5 Free" !important;
+        }
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+#date_val{
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+.js_date_btn{
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}

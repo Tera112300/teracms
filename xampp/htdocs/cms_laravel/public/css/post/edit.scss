@@ -1,0 +1,137 @@
+.note-editor.note-frame .note-status-output{
+  height: 0 !important;
+  border:0;
+}
+// #post_form {
+//     .note-color{
+//         display: none;
+//     }
+// }
+// .note-resizebar{
+//     display: block !important;
+// }
+.alert-success{
+    display: none !important;
+}
+.pull-right {
+    display: none !important;
+}
+// .note-resizebar{
+//     background-color: #f5f5f5;
+//     border-bottom-left-radius: 4px;
+//     border-bottom-right-radius: 4px;
+//     border-top: 1px solid #ddd;
+// }
+
+#upload_post{
+    .preview_frame{
+        img{
+            pointer-events: none;
+        }
+    }
+}
+.remove_catching{
+    color: #d94f4f;
+    text-decoration: underline;
+    display: inline-block;
+    cursor: pointer;
+        font-size: 13px;
+    &:hover{
+        color: #00a0d2;
+    }
+}
+.font_samll_txt{
+    font-size: 12px;
+}
+
+
+.collapse_block{
+    .card-header{
+        position: relative;
+        cursor: pointer;
+    }
+    .js_as{
+   position: absolute;
+   right: 20px;
+   top: 50%;
+   transform: translateY(-50%);
+   transition:transform 0.6s ease-in-out;
+   transform-origin: center center;
+   will-change: transform;
+   &.on{
+    transform:translateY(-50%) rotateX(360deg);
+   }
+    }
+  }
+
+
+//tags
+.tags_wrap{
+    border: 1px solid #ced4da;
+    background: #ffffff;
+    border-radius: 0.25rem;
+    padding: 10px;
+    letter-spacing: -.40em;
+    cursor: text;
+    .tags{
+        display: inline-block;
+        vertical-align: middle;
+        > .tag_list{
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        letter-spacing: normal;
+        border:solid 1px #ccc;
+            border-radius: 2px;
+            padding:0px 10px;
+            font-size: 15px;
+        }
+          .remove{
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+            margin-left: 6px;
+            &::before{
+                content: "☓";
+                font-size: 13px;
+            }
+          }
+    }
+    .tag-input{
+       
+        border: 1px solid transparent;
+        outline: 0px;
+        font-size: 15px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        letter-spacing: normal;
+        width: 30%;
+        &::-ms-clear {
+            visibility:hidden
+        }
+    }
+    
+}
+
+  @media screen and (max-width:480px){
+    .note-dropdown-menu.dropdown-style{
+        transform: translate3d(0px, 30px, 0px) !important;
+    }
+    .note-dropdown-menu.note-check{
+        max-width: 160px;
+        transform: translate3d(0px, 30px, 0px) !important;
+        .dropdown-item{
+            font-size: 10px;
+            padding: 5px 10px;
+            
+        }
+    }
+    #detail + .note-editor .modal-body {
+		font-size: 13px;
+		label{
+			width: 130px !important;
+		}
+		
+	}
+}

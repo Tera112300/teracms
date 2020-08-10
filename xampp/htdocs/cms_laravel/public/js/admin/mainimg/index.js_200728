@@ -1,0 +1,56 @@
+$(function(){
+
+  function up_img(img_name) {
+    $("<div>", {
+      class: 'col-xl-2 upload_wrap',
+      html: '<p class="mb-0 upload_img"><img src="' + img_name + '" alt="" class="object_cover"><button type="button" class="close js_delete" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></p>'
+    }).prependTo("#main_upload");
+    $(".object_cover").each(function(){
+			var object_width = $(this).width();
+			
+			$(this).height(object_width);
+		});
+  }
+
+  function up_input(value_img) {
+    $("<input>", {
+      type: 'hidden',
+      // name: 'main[]',
+      name: 'main[]',
+      value: value_img
+    }).prependTo("#file_hidden");
+  }
+  
+
+  $('#file').on('change',function(e){
+		var reader = new FileReader();
+		reader.onload = function(e){
+			//$('#preview').attr('src',e.target.result);
+      objectFitImages();
+      up_img(e.target.result);
+     
+		}
+    reader.readAsDataURL(e.target.files[0]);
+    console.log(e.target.files[0]);
+    var $file_hidden_val =  $("#file_hidden").val();
+    up_input($(this).val());
+    //up_input(e.target.files[0].name);
+    $(this).val('');
+    });
+    $("#main_upload .js_delete").each(function(){
+     
+      // $(this).on("click",function(){
+      //   var $parents = $(this).parents(".upload_img");
+      //   $parents.remove();
+      // });
+      
+      $(document).on("click", "#main_upload .js_delete", function(){
+        $(".hidden_js").remove(); //最初にhtmlに入れていないとjsで操作できなくなるため入れているが eq順番合わせのため削除
+        var $parents = $(this).parents(".upload_wrap");
+        //index番号に合わせてeqで隠しinputも削除
+        $("#file_hidden input").eq($parents.index()).remove();
+        //$('input[type=file]').val('');
+        $parents.remove();
+      });
+    });
+});

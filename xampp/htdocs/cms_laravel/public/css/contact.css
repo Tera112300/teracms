@@ -1,0 +1,118 @@
+/*! Writen  by SCSS */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap");
+#form table {
+  width: 100%;
+}
+#form table th {
+  text-align: left;
+  font-weight: normal;
+  margin-right: 15px;
+  width: 195px;
+}
+#form table th,
+#form table td {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+#form table input {
+  width: 100%;
+  padding: 6px 8px;
+  line-height: 1.2;
+  font-size: 14px;
+}
+#form table textarea {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+#form table .area {
+  vertical-align: top;
+}
+#form table .area th {
+  margin-top: 4px;
+}
+#form table .area th, #form table .area td {
+  padding-bottom: 0;
+}
+#form button,
+#form input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+#form .submit {
+  text-align: center;
+}
+#form .submit > span {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid #000;
+  background: #fff;
+}
+#form .submit > span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+  pointer-events: none;
+  transition: top 0.3s ease-in-out;
+}
+body:not(.mobile) #form .submit > span:hover::before {
+  top: 0;
+}
+body:not(.mobile) #form .submit > span:hover input[type=submit] {
+  color: #fff;
+}
+#form .submit input[type=submit] {
+  color: #000;
+  position: relative;
+  z-index: 8;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  #form table th, #form table td {
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
+    font-size: 13px;
+  }
+
+  #form table .form_tr {
+    display: block;
+  }
+
+  #form table th {
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  #form table td {
+    margin-bottom: 10px;
+  }
+
+  #form .submit input[type=submit] {
+    font-size: 12px;
+  }
+
+  #form table input, #form table textarea {
+    font-size: 13px;
+  }
+}

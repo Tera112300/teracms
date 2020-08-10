@@ -1,0 +1,85 @@
+#datepicker{
+    font-size: 13px;
+    .ui-datepicker-inline{
+        width: 100%;
+        padding: 0;
+    }
+    .ui-widget.ui-widget-content{
+        border: none;
+        background: none;
+    }
+    .ui-datepicker .ui-datepicker-header{
+        color: #fff;
+background: none;
+border: none;
+width: 87%;
+margin: 0 auto;
+    }
+    .ui-datepicker th{
+        color: #fff;
+    }
+    .ui-state-default{
+        color: #fff;
+        background: none;
+        border: none;
+        pointer-events: none;
+        text-align: center;
+        &.ui-state-active{
+            background: #34ce57;
+            
+        }
+    }
+    .ui-datepicker td{
+        pointer-events: none;
+    }
+    .ui-widget-header .ui-icon{
+        background: none;
+    }
+    .ui-datepicker .ui-datepicker-next{
+        background: none;
+        border: none;
+        cursor: pointer;
+        right: -22px;
+        &::after{
+            content: "\f054" !important;
+            font-weight: bold;
+            color: #fff;
+            font-family: "Font Awesome 5 Free" !important;
+        }
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    .ui-datepicker .ui-datepicker-prev{
+        background: none;
+        border: none;
+        cursor: pointer;
+        &::after{
+            content: "\f053" !important;
+            font-weight: bold;
+            color: #fff;
+            font-family: "Font Awesome 5 Free" !important;
+        }
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+#new_user{
+    .users-list-name{
+        color: #fff;
+    }
+    .users-list-date{
+        color: #fff;
+    }
+    .users-list > li img{
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+       
+    }
+}
+
+#new_post .products-list .product-img img{
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}

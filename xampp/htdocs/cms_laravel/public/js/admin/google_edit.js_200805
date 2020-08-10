@@ -1,0 +1,47 @@
+$(function() {
+    $("#google_edit .google_btn_list li").each(function(){
+      $(this).on("click",function(){
+        create_tag();
+      });
+      
+    });
+
+    function create_tag($target){
+      var data_tag = $(this).data("tag");
+      if(data_tag == "text"){
+        //console.log("ok");
+        var $modal = $("#modal-default");
+
+        $modal.find(".modal-title").text("フォームタグ生成: テキスト");
+        var append_tag = '<input type="text"></input>';
+        $modal.find(".disabled").val('<input type="text"></input>').after(append_tag);
+        var $next_input = $modal.find(".disabled").next('input');
+       // var disabled_val = $modal.find(".disabled").val();
+
+        
+        //チェックボックス判定
+        $modal.find("#customCheckbox1").on("click",function(){
+          var $disabled_clone_tag;
+          if ( $(this).prop('checked') == false ) {
+            //未選択時
+            $next_input.removeAttr("required");
+            $disabled_clone_tag = $next_input.prop('outerHTML')
+            $modal.find(".disabled").val($disabled_clone_tag);
+          } else {
+            $next_input.attr("required","");
+            $disabled_clone_tag = $next_input.prop('outerHTML')
+            $modal.find(".disabled").val($disabled_clone_tag);
+          }
+        });
+        
+      }
+    }
+
+
+    //bootstrap 閉じるイベント
+    $("#modal-default").on("hide.bs.modal",function(){
+      var $modal = $("#modal-default");
+      $modal.find(".disabled").val('');
+      $modal.find("#disabled_clone").remove();
+    });
+  });

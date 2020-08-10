@@ -1,0 +1,144 @@
+
+//ログイン画面
+.object_cover{
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    // &[data-height]{
+    //     width: 100%;
+    // }
+}
+.nav-item_mail .fa-envelope{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.wrapper{
+    overflow-x: hidden;
+}
+.login-box-msg{
+    font-size: 12px;
+    text-align: left;
+}
+.small_alert{
+    font-size: 12px;
+}
+#users_avatar{
+    font-family: 'object-fit: cover;';
+  }
+#users_avatar{
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    top: -2px;
+}
+.operation_list{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    letter-spacing: -.40em;
+    >li{
+        display: inline-block;
+        letter-spacing: normal;
+        margin-right: 10px;
+        a{
+            color: #fff;
+            font-size: 13px;
+        }
+        i.fa{
+            margin-right: 7px;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+#modal-danger.post_delete{
+    .modal-title{
+        font-size: 18px;
+    }
+    .modal-footer{
+        background: #fff;
+
+    }
+}
+
+.navbar-white{
+    .navbar-nav .nav-link{
+        font-size: 20px;
+        i.fa{
+            margin-right: 6px;
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+.note-editable{
+    font-size: 14px;
+}
+
+.permalink a{
+    color: #0073aa !important;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.nav-sidebar > .nav-item.laravel_logo_sidebar{
+    img{
+        padding-left: 5px;
+        padding-right: 6px;
+        position: relative;
+        top: -1px;
+        max-width:auto;
+        max-width: initial;
+    }
+}
+
+@media screen and (max-width:1420px){
+    .card-title{
+        font-size: 16px;
+    }
+    .form-group label{
+        font-size: 14px;
+    }
+    .input-group-text{
+        font-size: 13px;
+    }
+    .form-control{
+        font-size: 13px;
+    }
+    .note-editable{
+        font-size: 13px;
+    }
+    .btn_sp_size{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:767px){
+    .card-title{
+        font-size: 15px;
+    }
+    .form-group label{
+        font-size: 13px;
+    }
+    .input-group-text{
+        font-size: 12px;
+    }
+    .form-control{
+        font-size: 12px;
+    }
+}
+
+
+.modal-title{
+    font-size: 18px;
+}
+.modal-footer .btn{
+    font-size: 14px;
+}
+@media screen and (max-width:767px){
+    .modal-title{
+        font-size: 15px;
+    }
+    .modal-footer .btn{
+        font-size: 13px;
+    }
+}

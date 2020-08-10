@@ -1,0 +1,39 @@
+[Mon Aug 10 05:46:34.533071 2020] [ssl:warn] [pid 14588:tid 664] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 05:46:34.589132 2020] [ssl:warn] [pid 14588:tid 664] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 05:46:34.618103 2020] [mpm_winnt:notice] [pid 14588:tid 664] AH00455: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 configured -- resuming normal operations
+[Mon Aug 10 05:46:34.618103 2020] [mpm_winnt:notice] [pid 14588:tid 664] AH00456: Apache Lounge VC15 Server built: Apr 22 2020 11:11:00
+[Mon Aug 10 05:46:34.618103 2020] [core:notice] [pid 14588:tid 664] AH00094: Command line: 'c:\\users\\terao\\downloads\\xampp-portable-windows-x64-7.4.8-0-vc15\\xampp\\apache\\bin\\httpd.exe -d C:/Users/terao/Downloads/xampp-portable-windows-x64-7.4.8-0-VC15/xampp/apache'
+[Mon Aug 10 05:46:34.621100 2020] [mpm_winnt:notice] [pid 14588:tid 664] AH00418: Parent: Created child process 23008
+[Mon Aug 10 05:46:35.087255 2020] [ssl:warn] [pid 23008:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 05:46:35.131314 2020] [ssl:warn] [pid 23008:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 05:46:35.159297 2020] [mpm_winnt:notice] [pid 23008:tid 572] AH00354: Child: Starting 150 worker threads.
+[Mon Aug 10 17:53:46.290431 2020] [ssl:warn] [pid 8696:tid 648] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 17:53:46.333904 2020] [core:warn] [pid 8696:tid 648] AH00098: pid file C:/Users/terao/Downloads/tera_cms/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Aug 10 17:53:46.339887 2020] [ssl:warn] [pid 8696:tid 648] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 17:53:51.445791 2020] [mpm_winnt:notice] [pid 8696:tid 648] AH00455: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 configured -- resuming normal operations
+[Mon Aug 10 17:53:51.445791 2020] [mpm_winnt:notice] [pid 8696:tid 648] AH00456: Apache Lounge VC15 Server built: Apr 22 2020 11:11:00
+[Mon Aug 10 17:53:51.445791 2020] [core:notice] [pid 8696:tid 648] AH00094: Command line: 'c:\\users\\terao\\downloads\\tera_cms\\xampp\\apache\\bin\\httpd.exe -d C:/Users/terao/Downloads/tera_cms/xampp/apache'
+[Mon Aug 10 17:53:51.448789 2020] [mpm_winnt:notice] [pid 8696:tid 648] AH00418: Parent: Created child process 6016
+[Mon Aug 10 17:53:51.790995 2020] [ssl:warn] [pid 6016:tid 712] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 17:53:51.834971 2020] [ssl:warn] [pid 6016:tid 712] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 17:53:51.858955 2020] [mpm_winnt:notice] [pid 6016:tid 712] AH00354: Child: Starting 150 worker threads.
+[Mon Aug 10 19:17:37.341497 2020] [ssl:warn] [pid 16432:tid 716] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 19:17:37.389469 2020] [core:warn] [pid 16432:tid 716] AH00098: pid file C:/Users/terao/Downloads/tera_cms/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Aug 10 19:17:37.394467 2020] [ssl:warn] [pid 16432:tid 716] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 19:17:41.661484 2020] [mpm_winnt:notice] [pid 16432:tid 716] AH00455: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 configured -- resuming normal operations
+[Mon Aug 10 19:17:41.661484 2020] [mpm_winnt:notice] [pid 16432:tid 716] AH00456: Apache Lounge VC15 Server built: Apr 22 2020 11:11:00
+[Mon Aug 10 19:17:41.661484 2020] [core:notice] [pid 16432:tid 716] AH00094: Command line: 'c:\\users\\terao\\downloads\\tera_cms\\xampp\\apache\\bin\\httpd.exe -d C:/Users/terao/Downloads/tera_cms/xampp/apache'
+[Mon Aug 10 19:17:41.663491 2020] [mpm_winnt:notice] [pid 16432:tid 716] AH00418: Parent: Created child process 3264
+[Mon Aug 10 19:17:42.127834 2020] [ssl:warn] [pid 3264:tid 668] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 19:17:42.172809 2020] [ssl:warn] [pid 3264:tid 668] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 19:17:42.196781 2020] [mpm_winnt:notice] [pid 3264:tid 668] AH00354: Child: Starting 150 worker threads.
+[Mon Aug 10 19:34:29.174371 2020] [ssl:warn] [pid 13116:tid 604] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 19:34:29.218074 2020] [core:warn] [pid 13116:tid 604] AH00098: pid file C:/Users/terao/Downloads/tera_cms/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Aug 10 19:34:29.224071 2020] [ssl:warn] [pid 13116:tid 604] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 19:34:29.248057 2020] [mpm_winnt:notice] [pid 13116:tid 604] AH00455: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.8 configured -- resuming normal operations
+[Mon Aug 10 19:34:29.248057 2020] [mpm_winnt:notice] [pid 13116:tid 604] AH00456: Apache Lounge VC15 Server built: Apr 22 2020 11:11:00
+[Mon Aug 10 19:34:29.248057 2020] [core:notice] [pid 13116:tid 604] AH00094: Command line: 'c:\\users\\terao\\downloads\\tera_cms\\xampp\\apache\\bin\\httpd.exe -d C:/Users/terao/Downloads/tera_cms/xampp/apache'
+[Mon Aug 10 19:34:29.251061 2020] [mpm_winnt:notice] [pid 13116:tid 604] AH00418: Parent: Created child process 7276
+[Mon Aug 10 19:34:29.607851 2020] [ssl:warn] [pid 7276:tid 676] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 19:34:29.649211 2020] [ssl:warn] [pid 7276:tid 676] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Aug 10 19:34:29.673198 2020] [mpm_winnt:notice] [pid 7276:tid 676] AH00354: Child: Starting 150 worker threads.

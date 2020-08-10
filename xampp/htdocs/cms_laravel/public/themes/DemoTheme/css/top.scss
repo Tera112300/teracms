@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*! Writen  by SCSS */
+@import "mixin";
+
+
+.news{
+	.table_news{
+		font-size: 14px;
+		//max-width: 600px;
+		margin: 0 auto;
+		position: relative;
+		
+		&.scroll_bar_on{
+			height: 110px;
+			overflow-y: scroll;
+		}
+		table{
+			//width: 100%;
+			margin: 0 auto;
+		}
+		th{
+			font-weight: normal;
+			text-align: left;
+			padding-right: 15px;
+			vertical-align: top;
+			line-height: 1.4;
+			padding-bottom: 10px;
+		}
+		td{
+			line-height: 1.4;
+			padding-bottom: 10px;
+		}
+	}
+}
+@media screen and (max-width:480px){
+	.news .table_news th{
+		display: block;
+		width: 100%;
+		padding-right: 0;
+		border-bottom: 1px #ccc solid;
+		padding-bottom: 4px;
+		margin-bottom: 6px;
+	}
+	.news .table_news td{
+		display: block;
+		width: 100%;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+	}
+}
+
+
+
+
+

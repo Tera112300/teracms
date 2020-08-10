@@ -1,0 +1,420 @@
+.comb {
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.comb.on {
+  opacity: 1;
+}
+
+.comb_delay0 {
+  transition-delay: 0s;
+}
+
+.comb_delay1 {
+  transition-delay: 0.1s;
+}
+
+.comb_delay2 {
+  transition-delay: 0.2s;
+}
+
+.comb_delay3 {
+  transition-delay: 0.3s;
+}
+
+.comb_delay4 {
+  transition-delay: 0.4s;
+}
+
+.comb_delay5 {
+  transition-delay: 0.5s;
+}
+
+.comb_delay6 {
+  transition-delay: 0.6s;
+}
+
+.comb_delay7 {
+  transition-delay: 0.7s;
+}
+
+.comb_delay8 {
+  transition-delay: 0.8s;
+}
+
+.comb_delay9 {
+  transition-delay: 0.9s;
+}
+
+.comb_delay10 {
+  transition-delay: 1s;
+}
+
+.comb_delay11 {
+  transition-delay: 1.1s;
+}
+
+.comb_delay12 {
+  transition-delay: 1.2s;
+}
+
+.comb_delay13 {
+  transition-delay: 1.3s;
+}
+
+.comb_delay14 {
+  transition-delay: 1.4s;
+}
+
+.comb_delay15 {
+  transition-delay: 1.5s;
+}
+
+.comb_delay16 {
+  transition-delay: 1.6s;
+}
+
+.comb_delay17 {
+  transition-delay: 1.7s;
+}
+
+.comb_delay18 {
+  transition-delay: 1.8s;
+}
+
+.comb_delay19 {
+  transition-delay: 1.9s;
+}
+
+.comb_delay20 {
+  transition-delay: 2s;
+}
+
+.comb_delay21 {
+  transition-delay: 2.1s;
+}
+
+.comb_delay22 {
+  transition-delay: 2.2s;
+}
+
+.comb_delay23 {
+  transition-delay: 2.3s;
+}
+
+.comb_delay24 {
+  transition-delay: 2.4s;
+}
+
+.comb_delay25 {
+  transition-delay: 2.5s;
+}
+
+.comb_delay26 {
+  transition-delay: 2.6s;
+}
+
+.comb_delay27 {
+  transition-delay: 2.7s;
+}
+
+.comb_delay28 {
+  transition-delay: 2.8s;
+}
+
+.comb_delay29 {
+  transition-delay: 2.9s;
+}
+
+.comb_delay30 {
+  transition-delay: 3s;
+}
+
+.comb_delay31 {
+  transition-delay: 3.1s;
+}
+
+.comb_delay32 {
+  transition-delay: 3.2s;
+}
+
+.comb_delay33 {
+  transition-delay: 3.3s;
+}
+
+.comb_delay34 {
+  transition-delay: 3.4s;
+}
+
+.comb_delay35 {
+  transition-delay: 3.5s;
+}
+
+.comb_delay36 {
+  transition-delay: 3.6s;
+}
+
+.comb_delay37 {
+  transition-delay: 3.7s;
+}
+
+.comb_delay38 {
+  transition-delay: 3.8s;
+}
+
+.comb_delay39 {
+  transition-delay: 3.9s;
+}
+
+.comb_delay40 {
+  transition-delay: 4s;
+}
+
+.comb_delay41 {
+  transition-delay: 4.1s;
+}
+
+.comb_delay42 {
+  transition-delay: 4.2s;
+}
+
+.comb_delay43 {
+  transition-delay: 4.3s;
+}
+
+.comb_delay44 {
+  transition-delay: 4.4s;
+}
+
+.comb_delay45 {
+  transition-delay: 4.5s;
+}
+
+.comb_delay46 {
+  transition-delay: 4.6s;
+}
+
+.comb_delay47 {
+  transition-delay: 4.7s;
+}
+
+.comb_delay48 {
+  transition-delay: 4.8s;
+}
+
+.comb_delay49 {
+  transition-delay: 4.9s;
+}
+
+.comb_delay50 {
+  transition-delay: 5s;
+}
+
+.comb_delay51 {
+  transition-delay: 5.1s;
+}
+
+.comb_delay52 {
+  transition-delay: 5.2s;
+}
+
+.comb_delay53 {
+  transition-delay: 5.3s;
+}
+
+.comb_delay54 {
+  transition-delay: 5.4s;
+}
+
+.comb_delay55 {
+  transition-delay: 5.5s;
+}
+
+.comb_delay56 {
+  transition-delay: 5.6s;
+}
+
+.comb_delay57 {
+  transition-delay: 5.7s;
+}
+
+.comb_delay58 {
+  transition-delay: 5.8s;
+}
+
+.comb_delay59 {
+  transition-delay: 5.9s;
+}
+
+.comb_delay60 {
+  transition-delay: 6s;
+}
+
+.comb_delay61 {
+  transition-delay: 6.1s;
+}
+
+.comb_delay62 {
+  transition-delay: 6.2s;
+}
+
+.comb_delay63 {
+  transition-delay: 6.3s;
+}
+
+.comb_delay64 {
+  transition-delay: 6.4s;
+}
+
+.comb_delay65 {
+  transition-delay: 6.5s;
+}
+
+.comb_delay66 {
+  transition-delay: 6.6s;
+}
+
+.comb_delay67 {
+  transition-delay: 6.7s;
+}
+
+.comb_delay68 {
+  transition-delay: 6.8s;
+}
+
+.comb_delay69 {
+  transition-delay: 6.9s;
+}
+
+.comb_delay70 {
+  transition-delay: 7s;
+}
+
+.comb_delay71 {
+  transition-delay: 7.1s;
+}
+
+.comb_delay72 {
+  transition-delay: 7.2s;
+}
+
+.comb_delay73 {
+  transition-delay: 7.3s;
+}
+
+.comb_delay74 {
+  transition-delay: 7.4s;
+}
+
+.comb_delay75 {
+  transition-delay: 7.5s;
+}
+
+.comb_delay76 {
+  transition-delay: 7.6s;
+}
+
+.comb_delay77 {
+  transition-delay: 7.7s;
+}
+
+.comb_delay78 {
+  transition-delay: 7.8s;
+}
+
+.comb_delay79 {
+  transition-delay: 7.9s;
+}
+
+.comb_delay80 {
+  transition-delay: 8s;
+}
+
+.comb_delay81 {
+  transition-delay: 8.1s;
+}
+
+.comb_delay82 {
+  transition-delay: 8.2s;
+}
+
+.comb_delay83 {
+  transition-delay: 8.3s;
+}
+
+.comb_delay84 {
+  transition-delay: 8.4s;
+}
+
+.comb_delay85 {
+  transition-delay: 8.5s;
+}
+
+.comb_delay86 {
+  transition-delay: 8.6s;
+}
+
+.comb_delay87 {
+  transition-delay: 8.7s;
+}
+
+.comb_delay88 {
+  transition-delay: 8.8s;
+}
+
+.comb_delay89 {
+  transition-delay: 8.9s;
+}
+
+.comb_delay90 {
+  transition-delay: 9s;
+}
+
+.comb_delay91 {
+  transition-delay: 9.1s;
+}
+
+.comb_delay92 {
+  transition-delay: 9.2s;
+}
+
+.comb_delay93 {
+  transition-delay: 9.3s;
+}
+
+.comb_delay94 {
+  transition-delay: 9.4s;
+}
+
+.comb_delay95 {
+  transition-delay: 9.5s;
+}
+
+.comb_delay96 {
+  transition-delay: 9.6s;
+}
+
+.comb_delay97 {
+  transition-delay: 9.7s;
+}
+
+.comb_delay98 {
+  transition-delay: 9.8s;
+}
+
+.comb_delay99 {
+  transition-delay: 9.9s;
+}
+
+.comb_delay100 {
+  transition-delay: 10s;
+}
+
+.comb_bottom {
+  transform: translateY(30px);
+}
+
+.comb_bottom.on {
+  transform: none;
+}

@@ -1,0 +1,90 @@
+
+// site settings:
+
+$cont_width : 1200px;
+$pc : "body:not(.mobile)" ;
+
+$color_main : #900000;
+$color02 : #C00000;
+$color03 : #300000;
+
+$main_bg : #eeeeee;
+$bg1 : #cccccc;
+$bg2 : #eeeeee;
+
+$main_break : 767;
+
+$sub_break_1 : 600;
+$sub_break_2 : 480;
+$sub_break_3 : 900;
+$sub_break_4 : 1380;
+
+// breakpoint
+@mixin breakpoint($break:1200){
+	@media screen and (max-width: #{$break}px){ // VPC
+		.vpc#{$break}{
+			display: none;	
+		}
+	}
+	@media not screen, screen and (min-width: #{1 + $break}px){ // VSP
+		.vsp#{$break}{
+			display: none;	
+		}
+	}
+}
+
+// width percentage(ceil)
+@mixin w_per($parent:$cont_width,$child:$cont_width/2) {
+	$per:ceil($child/$parent*10000%) / 100;
+	width:$per;
+	max-width: #{$child}px;
+}
+
+// width percentage(floor)
+@mixin w_per_f($parent:$cont_width,$child:$cont_width/2) {
+	$per:floor($child/$parent*10000%) / 100;
+	width:$per;
+}
+
+// width percentage(round)
+@mixin w_per_r($parent:$cont_width,$child:$cont_width/2) {
+	$per:round($child/$parent*10000%) / 100;
+	width:$per;
+}
+
+@mixin t_shadow_spr($spread:10, $shadow-color:#000000){
+	$sha:(0px 0px 0px #{$shadow-color});
+	@for $i from 1 through $spread {
+		$sha:(#{$sha} , 0px 0px #{$i}px #{$shadow-color});
+	}
+	text-shadow:$sha;
+}
+
+@mixin b_shadow_spr($spread:10, $shadow-color:#000000){
+	$sha:(0px 0px 0px #{$shadow-color});
+	@for $i from 1 through $spread {
+		$sha:(#{$sha} , 0px 0px #{$i}px #{$shadow-color});
+	}
+	box-shadow:$sha;
+}
+
+@mixin mq($bp: 767) {
+	@media screen and (max-width: #{$bp}px) {
+    @content;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap');
+
+@mixin en() {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+@mixin all0() {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}

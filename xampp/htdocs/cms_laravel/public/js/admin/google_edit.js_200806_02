@@ -1,0 +1,146 @@
+$(function() {
+
+
+  var textarea_js_val = $("#google_edit .textarea_js_val").html().trim();
+      $("#google_edit .code_area").val(textarea_js_val);
+
+    $("#google_edit .google_btn_list li").each(function(){
+      $(this).on("click",function(){
+        create_tag($(this),"text");
+        create_tag($(this),"email");
+      });
+      
+    });
+
+    function create_tag($target,type){
+      var data_tag = $target.data("tag");
+      if(data_tag == type){
+        //console.log("ok");
+        var $modal = $("#modal-default");
+
+        $modal.find(".modal-title").text("フォームタグ生成: テキスト");
+        var append_tag = '<input type="'+data_tag+'"placeholder="" name=""></input>';
+        $modal.find(".form_tr td").append(append_tag);
+        var $form_tr = $modal.find(".form_tr");
+
+        $modal.find("#disabled").val($form_tr.prop('outerHTML').trim());
+        
+        
+       // var disabled_val = $modal.find("#disabled").val();
+
+        
+        //チェックボックス判定
+        $modal.find("#customCheckbox1").on("click",function(){
+          var $disabled_clone_tag;
+          if ( $(this).prop('checked') == false ) {
+            //未選択時
+            $form_tr.find("input").removeAttr("required");
+            $disabled_clone_tag = $form_tr.prop('outerHTML');
+            $modal.find("#disabled").val($disabled_clone_tag);
+          } else {
+            $form_tr.find("input").attr("required","");
+            $disabled_clone_tag = $form_tr.prop('outerHTML');
+            $modal.find("#disabled").val($disabled_clone_tag);
+          }
+        });
+
+        //タイトル判定
+        $modal.find("#title_input").on("keyup",function(){
+          var input_val = $(this).val();
+          $form_tr.children("th").text(input_val);
+          $modal.find("#disabled").val($form_tr.prop('outerHTML').trim());
+        });
+
+
+        //デフォルト値判定
+        $modal.find("#default_input").on("keyup",function(){
+          var input_val = $(this).val();
+          $form_tr.find("input").attr("placeholder",input_val);
+          $modal.find("#disabled").val($form_tr.prop('outerHTML').trim());
+        });
+
+        //name属性設定
+         
+         $modal.find("#name_input").on("keyup",function(){
+          var input_val = $(this).val();
+          $form_tr.find("input").attr("name",input_val);
+          $modal.find("#disabled").val($form_tr.prop('outerHTML').trim());
+        });
+      }else if(data_tag == "textarea"){
+        var $modal = $("#modal-default");
+
+        $modal.find(".modal-title").text("フォームタグ生成: テキストエリア");
+        var append_tag = '<textarea rows="4" name=""></textarea>';
+        $modal.find(".form_tr td").append(append_tag);
+        var $form_tr = $modal.find(".form_tr");
+
+        $modal.find("#disabled").val($form_tr.prop('outerHTML').trim());
+
+        
+        //チェックボックス判定
+        $modal.find("#customCheckbox1").on("click",function(){
+          var $disabled_clone_tag;
+          if ( $(this).prop('checked') == false ) {
+            //未選択時
+            $form_tr.find("textarea").removeAttr("required");
+            $disabled_clone_tag = $form_tr.prop('outerHTML');
+            $modal.find("#disabled").val($disabled_clone_tag);
+          } else {
+            $form_tr.find("textarea").attr("required","");
+            $disabled_clone_tag = $form_tr.prop('outerHTML');
+            $modal.find("#disabled").val($disabled_clone_tag);
+          }
+        });
+
+        //タイトル判定
+        $modal.find("#title_input").on("keyup",function(){
+          var input_val = $(this).val();
+          $form_tr.children("th").text(input_val);
+          $modal.find("#disabled").val($form_tr.prop('outerHTML').trim());
+        });
+
+
+        //デフォルト値判定
+        $modal.find("#default_input").on("keyup",function(){
+          var input_val = $(this).val();
+          $form_tr.find("textarea").attr("placeholder",input_val);
+          $modal.find("#disabled").val($form_tr.prop('outerHTML').trim());
+        });
+
+        //name属性設定
+         
+         $modal.find("#name_input").on("keyup",function(){
+          var input_val = $(this).val();
+          $form_tr.find("textarea").attr("name",input_val);
+          $modal.find("#disabled").val($form_tr.prop('outerHTML').trim());
+        });
+      }
+    }
+
+    $(".tag_append_btn").on("click",function(){
+      var disabled_val = $("#disabled").val();
+      
+    
+      // console.log($("#google_edit .code_area").val());
+      // console.log($("#google_edit .textarea_js_val").html().trim());
+
+      //隠しフォームとテキストエリアの値が一緒かどうか
+      if($("#google_edit .textarea_js_val").html().trim() ==  $("#google_edit .code_area").val()){
+        $("#google_edit .textarea_js_val form").append(disabled_val);
+        var textarea_js_val = $("#google_edit .textarea_js_val").html().trim();
+        $("#google_edit .code_area").val(textarea_js_val);
+      }else{
+        $("#google_edit .textarea_js_val form").append(disabled_val);
+      }
+      
+      
+    });
+
+
+    //bootstrap 閉じるイベント
+    $("#modal-default").on("hide.bs.modal",function(){
+      var $modal = $("#modal-default");
+      $modal.find("#disabled").val('');
+      $modal.find("#disabled_clone").remove();
+    });
+  });

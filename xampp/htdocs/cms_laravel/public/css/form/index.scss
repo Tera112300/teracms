@@ -1,0 +1,30 @@
+.card-header .flex_header_block{
+   display: flex;
+   align-items: center;
+   float: left;
+   .card-title{
+       margin-right: 15px;
+   }
+   + .card-tools{
+       position: relative;
+       top: 6px;
+   }
+}
+@media screen and (max-width:640px){
+    .card-header .flex_header_block{
+        float: none;
+        margin-bottom: 15px;
+    }
+    .card-header > .card-tools{
+        float: none;
+        margin-bottom: 20px;
+    }
+    .card-header > .card-tools .input-group{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:340px){
+    .card-header .flex_header_block .operation_list > li a{
+        font-size: 11px;
+    }
+}

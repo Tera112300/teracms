@@ -1,0 +1,123 @@
+$(function(){
+	$(".tags_wrap").each(function(){
+		var $tag_hidden = $(this).find(".tag_hidden");
+		var $tags = $(this).find(".tags");
+		$(this).on("click",function(){
+			$(this).find(".tag-input").focus();
+		});
+
+		$(this).find(".tag-input").on("keyup",function(){
+			var input_decision = $(this).val();
+			if(input_decision.slice(-1) == ","){
+				$(this).val("");
+			 }
+			 //最後のvalの文字が「,」かつ最初の1文字目ではない時実行
+		if(input_decision.slice(-1) == "," && input_decision.length != 1){
+			//console.log(input_decision.slice(0,-1));
+			var input_decision_val = $tag_hidden.val();
+			$tag_hidden.val(input_decision_val+input_decision);
+			$tags.append("<div class='tag_list'>" + input_decision.slice(0,-1) + "<span class='remove'></span></div>");
+		 }
+		});
+		$(this).find(".tag-input").on("keydown",function(e){
+			var input_decision = $(this).val();
+			//8 backspace keycode
+			if(e.keyCode == 8 && input_decision == ""){
+				$tags.find(".tag_list:last-child").remove();
+			}
+		});
+		
+		$(document).on("click",".tags_wrap .tags .remove",function(){
+			//$(this).parent(".tag_list").remove();
+			//console.log("test");
+			var all_value = "";
+			$tag_hidden.val("");
+			$(this).parent().remove();
+			$tags.find(".tag_list").each(function(){
+				all_value += $(this).text() + ",";
+			});
+			$tag_hidden.val(all_value);
+		});
+
+
+	});
+	
+	$('#detail').summernote({
+		height: 920,
+		///fontNames: ["YuGothic", "Yu Gothic", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif", "Arial", "Arial Black", "Comic Sans MS", "Courier New", "Helvetica Neue", "Helvetica", "Impact", "Lucida Grande", "Tahoma", "Times New Roman", "Verdana"],
+		lang: "ja-JP",
+		callbacks: {
+		  onImageUpload: function (files) {
+			data = new FormData();
+			console.log(files[0]);
+			data.append("files", files[0]);
+			$.ajax({
+			  data: data,
+			  type: "POST",
+			  url: "/cms_laravel/cms-admin/post/upload_img", // httaccessでpublicなくしているjs側ではpublic必要
+			  cache: false,
+			  contentType: false,
+			  processData: false,
+			  headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
+			}).done(function (url) {
+				//console.log(url);
+				$('#detail').summernote('insertImage', "/cms_laravel/public/upload/"+ url); /// httaccessでpublicなくしているjs側ではpublic必要
+			  //alert_dom.prependTo('#wrap');
+			  // ...
+			});
+		  }
+		}
+	  });
+	  $('#myImage').on('change',function(e){
+		var reader = new FileReader();
+		reader.onload = function(e){
+			$('#preview').attr('src',e.target.result);
+		}
+		reader.readAsDataURL(e.target.files[0]);
+		$(this).next('.custom-file-label').text(e.target.files[0].name);
+		$(this).prev("input").attr("value",e.target.files[0].name);//create時のために追加
+		$(".remove_catching").addClass("d-inline-block");
+	  });
+
+	  $(".collapse_block").each(function(){
+		  var $card_header = $(this).children(".card-header");
+		  var $card_body = $(this).children(".card-body");
+		  $card_header.on("click",function(){
+			$card_body.slideToggle();
+			$card_header.find(".js_as").toggleClass("on");
+		  });
+	  });
+
+	  $(".remove_catching").on("click",function(){
+		  var data_dummy =  $("#preview").data("dummy");
+		  $("#preview").attr("src",data_dummy);
+		  $("#myImage").prev("input").attr("value",""); //dbで画像が設定されている時に更新回避用input
+		  $("#myImage").next("label").text("アップロードする。");
+		  $(this).removeClass("d-inline-block");
+	  });
+
+	  //input_tag_js
+	  
+	//  $("#tag-input").on("keyup",function(e){
+	// 	 //console.log(e);
+	// 	 var input_decision = $(this).val();
+		
+	// 	 if(input_decision.slice(-1) == ","){
+	// 		$(this).val("");
+	// 	 }
+	// 	 //最後のvalの文字が「,」かつ最初の1文字目ではない時実行
+	// 	 if(input_decision.slice(-1) == "," && input_decision.length != 1){
+	// 		//console.log(input_decision.slice(0,-1));
+	// 		var input_decision_val = $("#tag_hidden").val();
+	// 		$("#tag_hidden").val(input_decision_val+input_decision);
+	// 		$("#tags").append("<div class='tag_list'>" + input_decision.slice(0,-1) + "　<span class='remove'>☓</span></div>");
+	// 	 }
+	//  });
+	
+	
+
+	 
+	 //input_tag_js
+});

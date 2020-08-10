@@ -1,0 +1,139 @@
+@charset "utf-8";
+/*! Writen  by SCSS */
+@import "mixin";
+
+.box_404{
+	max-width: 582px;
+	margin: 90px auto;
+	letter-spacing: -.40em;
+	.circle{
+		
+		width: 64.44%;
+		display: inline-block;
+		vertical-align: middle;
+		letter-spacing: normal;
+		margin-right: 12.02%;
+		.list{
+			position: relative;
+			padding-top: 122.94%;
+			
+			>li{
+				position: absolute;
+				 animation: fuwafuwa 3s infinite ease-in-out alternate;
+				&:nth-child(1){
+					top: 0;
+					left: 8%;
+					width: 67.74%;
+				}
+				&:nth-child(2){
+					left: 0;
+					top: 49.9%;
+					 animation-duration: 0.5s;
+					width: 17.6%;
+				}
+				&:nth-child(3){
+					bottom: 0;
+					left: 15.5%;
+					 animation-duration: 0.7s;
+					width: 26.94%;
+				}
+				&:nth-child(4){
+					top: 49.79%;
+					left: 59.47%;
+					 animation-duration: 0.9s;
+					width: 33.6%;
+				}
+				&:nth-child(5){
+					top: 16.06%;
+					right: 0;
+					 animation-duration: 0.9s;
+					width: 14.94%;
+				}
+			}
+		}
+	}
+	.text{
+		width: 23.54%;
+		display: inline-block;
+		vertical-align: middle;
+		letter-spacing: normal;
+		h3{
+			font-size: 70px;
+			line-height: 1.1;
+			margin-bottom: 10px;
+			word-break: break-all;
+		}
+		p.read{
+			font-size: 20px;
+			margin-bottom: 19px;
+			word-break: break-all;
+		}
+		.btn_back{
+			font-size: 18px;
+			a{
+				display: inline-block;
+				line-height: 1.2;
+				padding: 10px;
+				background: #f5f5f5;
+				border-radius: 6px;
+				transition: opacity 0.6s ease-in-out;
+				#{$pc} &:hover{
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}
+@keyframes fuwafuwa {
+    0% {
+        transform: translateY(0);
+    }
+    33.33333% {
+        transform: translateY(-0.8%);
+    }
+    66.66667% {
+        transform: translateY(0.8%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width:960px){
+	.box_404 .text h3{
+		font-size: 60px;
+	}
+	.box_404 .text p.read{
+		font-size: 17px;
+	}
+	.box_404 .text .btn_back{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width:640px){
+	.box_404{
+		position: relative;
+		margin: 65px 0;
+	}
+	.box_404 .circle{
+		display: block;
+		width: auto;
+		max-width: 375px;
+		margin: 0 auto;
+	}
+	.box_404 .text{
+		width: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		z-index: 9;
+		display: block;
+	}
+	.box_404 .text h3{
+		font-size: 55px;
+	}
+	.box_404 .text p.read{
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,23 @@
+@charset "utf-8";
+.comb {
+	opacity: 0;
+	transition: opacity 1s ease-in-out ,  transform 1s ease-in-out;
+}
+
+.comb.on {
+	opacity: 1;
+}
+
+
+@for $i from 0 through 100 {
+	.comb_delay#{$i} { transition-delay: 0.1s * $i; }
+  }
+
+.comb_bottom {
+	-webkit-transform: translateY(30px);
+	transform: translateY(30px);
+}
+.comb_bottom.on {
+	-webkit-transform: none;
+	transform: none;
+}

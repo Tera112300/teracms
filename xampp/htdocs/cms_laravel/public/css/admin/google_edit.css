@@ -1,0 +1,330 @@
+@charset "UTF-8";
+.ttl_wrap {
+  margin-bottom: 25px;
+}
+.ttl_wrap .form_ttl {
+  font-size: 20px;
+}
+.ttl_wrap .form_read {
+  font-size: 13px;
+}
+.ttl_wrap .document_box {
+  display: inline-block;
+  letter-spacing: -0.4em;
+  background: #fff;
+  border-left: 10px #aa0000 solid;
+  padding: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.ttl_wrap .document_box .left {
+  letter-spacing: normal;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 85px;
+  line-height: 1;
+  margin-right: 20px;
+  color: #aa0000;
+  width: 70px;
+}
+.ttl_wrap .document_box .right {
+  width: calc(100% - 90px);
+  letter-spacing: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ttl_wrap .document_box .right p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.ttl_wrap .document_box .right .download_link {
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 640px) {
+  .ttl_wrap .document_box .right p {
+    font-size: 13px;
+  }
+
+  .ttl_wrap .document_box .right .download_link {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ttl_wrap .document_box {
+    padding: 13px;
+    border-left-width: 5px;
+  }
+
+  .ttl_wrap .document_box .left {
+    margin-right: 10px;
+  }
+
+  .ttl_wrap .document_box .right {
+    width: calc(100% - 80px);
+  }
+}
+#modal-default .modal_table {
+  width: 100%;
+  font-size: 14px;
+}
+#modal-default .modal_table input {
+  font-size: 14px;
+  padding: 6px 12px;
+}
+#modal-default .modal_table th {
+  padding-bottom: 8px;
+}
+#modal-default .modal_table td {
+  padding-bottom: 8px;
+}
+#modal-default .modal_table td .form-group {
+  margin-bottom: 0;
+}
+#modal-default .modal_table td .custom-control-label::before {
+  top: 0.1rem;
+}
+#modal-default .modal_table td .custom-control-label::after {
+  top: 0.1rem;
+}
+#modal-default .modal-footer input, #modal-default .modal-footer button {
+  font-size: 13px;
+}
+
+#google_edit {
+  /* Tooltip */
+}
+#google_edit .google_btn_list {
+  letter-spacing: -0.4em;
+  padding: 0;
+  margin-bottom: 0;
+  margin-bottom: 6px;
+}
+#google_edit .google_btn_list li {
+  display: block;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+  margin-right: 5px;
+  line-height: 1.3;
+  border: 1px solid #0071a1;
+  color: #0071a1;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px 10px;
+  transition: opacity 0.6s ease-in-out;
+  cursor: pointer;
+}
+#google_edit .google_btn_list li:hover {
+  opacity: 0.6;
+}
+#google_edit .google_btn_list li:last-child {
+  margin-right: 0;
+}
+#google_edit .wrap_contenteditable {
+  border: 1px solid #7e8993;
+  color: #32373c;
+  border-radius: 4px;
+  background: #fff;
+  outline: 0;
+  position: relative;
+  transition: 0.6s ease-in-out;
+}
+#google_edit .wrap_contenteditable.on {
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+}
+#google_edit .wrap_contenteditable.on_hover {
+  opacity: 0.6;
+}
+#google_edit .wrap_contenteditable::after {
+  content: "コピーしました";
+  background: #555;
+  display: inline-block;
+  color: #fff;
+  width: 110px;
+  border-radius: 0.4rem;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  font-size: 0.75rem;
+  padding: 4px 10px 6px 10px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+#google_edit .wrap_contenteditable.on_clipboard::after {
+  opacity: 1;
+}
+#google_edit .wrap_contenteditable .contenteditable_js {
+  pointer-events: all;
+  outline: none;
+  line-height: 1;
+  padding: 2px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+}
+#google_edit .wrap_contenteditable .contenteditable_js:focus {
+  border: 1px solid #7e8993;
+  border-radius: 4px;
+}
+#google_edit .wrap_contenteditable .contenteditable_js br:first-child {
+  display: none;
+}
+#google_edit .form_top {
+  padding: 5px 10px;
+  padding-bottom: 0;
+  cursor: pointer;
+  display: block;
+}
+#google_edit .form_top > span:not(.action_url) {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block;
+}
+#google_edit .form_bottom {
+  padding: 5px 10px;
+  padding-top: 0;
+  cursor: pointer;
+  display: block;
+}
+#google_edit .form_bottom > span {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block;
+}
+#google_edit .btn-clipboard {
+  position: relative;
+}
+#google_edit .btn-clipboard::after {
+  content: "コピーしました";
+  background: #555;
+  display: inline-block;
+  color: #fff;
+  width: 110px;
+  border-radius: 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(106%, 0);
+  font-size: 0.75rem;
+  padding: 4px 10px 6px 10px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+#google_edit .btn-clipboard.on::after {
+  opacity: 1;
+}
+#google_edit .ttl {
+  font-size: 18px;
+  margin-bottom: 7px;
+  line-height: 1.4;
+}
+#google_edit .ttl + .read {
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+#google_edit .hidden_textarea {
+  display: none !important;
+  width: 0;
+  height: 0;
+  border: 0;
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.js_invalid_action + .invalid-feedback {
+  margin-left: 233px;
+}
+
+#google_edit .tab_wrap {
+  margin-bottom: 10px;
+}
+#google_edit .tab_wrap .tab_nav {
+  list-style: none;
+  padding: 0;
+  letter-spacing: -0.4em;
+  margin-bottom: -1px;
+  padding: 0px 16px;
+}
+#google_edit .tab_wrap .tab_nav > li {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: normal;
+  text-align: center;
+  margin-right: 8px;
+  font-size: 13px;
+  border: 1px solid #aaa;
+  padding: 3px 10px;
+  transition: opacity 0.6s ease-in-out;
+}
+#google_edit .tab_wrap .tab_nav > li:not(.active):hover {
+  opacity: 0.6;
+}
+#google_edit .tab_wrap .tab_nav > li.active {
+  border-bottom-color: #f5f5f5;
+  cursor: default;
+}
+#google_edit .tab_wrap .tab_content {
+  padding: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  border: 1px solid #aaa;
+  background: #f5f5f5;
+  padding: 16px;
+}
+#google_edit .tab_wrap .tab_content > li {
+  display: none;
+}
+#google_edit .tab_wrap .tab_content > li.active {
+  display: block;
+}
+#google_edit .tab_wrap .tab_content .mail_table {
+  width: 100%;
+  font-size: 14px;
+}
+#google_edit .tab_wrap .tab_content .mail_table th {
+  width: 230px;
+}
+#google_edit .tab_wrap .tab_content .mail_table th label {
+  margin-bottom: 0;
+}
+#google_edit .tab_wrap .tab_content .mail_table input {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  #google_edit .tab_wrap .tab_nav {
+    padding: 0 10px;
+  }
+
+  #google_edit .tab_wrap .tab_content {
+    padding: 16px 10px;
+  }
+
+  #google_edit .ttl {
+    font-size: 16px;
+  }
+
+  #google_edit .ttl + .read {
+    font-size: 13px;
+  }
+
+  #google_edit .tab_wrap .tab_content .mail_table th {
+    width: 100%;
+    display: block;
+  }
+
+  #google_edit .tab_wrap .tab_content .mail_table td {
+    width: 100%;
+    display: block;
+  }
+
+  .js_invalid_action + .invalid-feedback {
+    margin-left: 0;
+  }
+}

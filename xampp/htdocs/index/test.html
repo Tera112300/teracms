@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無題ドキュメント</title>
+</head>
+<p>テスト</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="jquery.xdomainajax.js"></script>
+<script>
+$(function(){
+	$.ajax({
+    url: "https://teratail.com",
+    type: "GET",
+		 crossDomain: true,
+    success: function(xml, textStatus, xhr) {
+        console.log(xhr.status);
+    },
+    complete: function(xhr, textStatus) {
+        console.log(xhr.status);
+    } 
+});
+});	
+</script>
+<body>
+</body>
+</html>
