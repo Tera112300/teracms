@@ -2,11 +2,16 @@
 
 Laravel製の自作CMS
 
+
 # 初期ユーザー
+
 ユーザー名:UserName
 メールアドレス:User@mailaddress.com
 パスワード：password
 
+
+ログインurl
+http://localhost/cms_laravel/login
 
 # テーマはDemoThemeを用意
 
@@ -40,14 +45,7 @@ app
 　 　 　 ├ 自作テーマコントローラー01
 　 　 　 └ 自作テーマコントローラー02
 
-# 初期ユーザー情報
-ユーザー名：admin
 
-メールアドレス:admin@gmail.com
-
-パスワード：admin
-
-投稿ステータス：管理者
 
 
 
